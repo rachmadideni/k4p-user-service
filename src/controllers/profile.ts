@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { ds } from '@/ds';
-import { Profile } from '@/entity/profile';
+import { ds } from '../data-source';
+import { Profile } from '../entity/profile';
 
 export const insertProfile = async (req: Request, res: Response) => {
   await ds.manager.create(Profile, req.body);

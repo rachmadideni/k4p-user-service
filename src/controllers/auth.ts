@@ -1,10 +1,9 @@
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
-import { User } from '@/entity/user';
-import { RefreshToken } from '@/entity/refreshToken';
-import { ds } from '@/ds';
+import { User, RefreshToken } from '../entity';
 import { v4 as uuidv4 } from 'uuid';
 import nodeMailer from 'nodemailer';
+import { ds } from '../data-source';
 
 export const signup = async (req: Request, res: Response) => {
   const user = ds.getRepository(User).create(req.body);

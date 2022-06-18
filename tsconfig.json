@@ -12,10 +12,10 @@
         "strictPropertyInitialization": false,
         // https://stackoverflow.com/questions/58187115/typescript-paths-not-working-in-an-express-project
         "paths": {
-            "@/controllers/*": ["src/controllers/*"],
-            "@/ds": ["src/data-source"],
-            "@/entity/*": ["src/entity/*"],               
-            "@/routes/*": ["src/routes/*"]               
+            // "@/controllers/*": ["src/controllers/*"],
+            // "@/ds": ["src/data-source.ts"],
+            // "@/entity/*": ["src/entity/*"],               
+            // "@/routes/*": ["src/routes/*"]               
           }
     },
     "exclude": ["build", "node_modules", "**/*.spec.ts", "test/**"]

@@ -1,6 +1,6 @@
 import express from 'express';
 import RouteGroup from 'express-route-grouping';
-import { insertProfile, updateProfile, upload } from '@/controllers/profile';
+import { insertProfile, updateProfile, upload } from '../controllers/profile';
 
 const root = new RouteGroup('/', express.Router());
 root.group('profile', (profile) => {

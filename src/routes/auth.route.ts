@@ -1,6 +1,6 @@
 import express from 'express';
 import RouteGroup from 'express-route-grouping';
-import { signup, signin, refreshToken, forgotPassword } from '@/controllers/auth';
+import { signup, signin, refreshToken, forgotPassword } from '../controllers/auth';
 
 const root = new RouteGroup('/', express.Router());
 root.group('auth', (auth) => {

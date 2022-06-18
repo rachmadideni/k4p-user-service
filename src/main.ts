@@ -1,12 +1,11 @@
-/* eslint-disable import/first */
 import * as dotenv from 'dotenv';
 dotenv.config();
 
 import 'reflect-metadata';
 import express from 'express';
-import { ds } from '@/ds';
+import { ds } from './data-source';
 
-import appRoutes from '@/routes/index.route';
+import appRoutes from './routes/index.route';
 
 ds.initialize()
   .then(() => console.log('db initialized success'))
