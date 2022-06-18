@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es5",
+        "outDir": "build",
+        "rootDir": "src",
+        "baseUrl": ".",
+        "strict": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        // https://stackoverflow.com/questions/58187115/typescript-paths-not-working-in-an-express-project
+        "paths": {
+            "@/controllers/*": ["src/controllers/*"],
+            "@/ds": ["src/data-source"],
+            "@/entity/*": ["src/entity/*"],               
+            "@/routes/*": ["src/routes/*"]               
+          }
+    },
+    "exclude": ["build", "node_modules", "**/*.spec.ts", "test/**"]
+}
